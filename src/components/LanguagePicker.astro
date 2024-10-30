@@ -1,0 +1,21 @@
+---
+import { languages } from '../i18n/ui'
+import { getLangFromUrl, useTranslatedPath } from '../i18n/utils'
+
+const currentLang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(currentLang)
+---
+
+<div
+  class=`flex flex-col absolute z-30 right-4 gap-4 max-h-6 overflow-hidden transition-all duration-500
+  hover:max-h-[8rem]`
+>
+  <img class="w-6 relative" src="/translate.svg" alt="translate" />
+  {
+    Object.entries(languages).map(([lang, label]) => (
+      <a href={translatePath('/', lang)}>
+        <img class="w-6" src={`/${lang}.svg`} alt={label} />
+      </a>
+    ))
+  }
+</div>

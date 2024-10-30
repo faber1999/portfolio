@@ -1,0 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import LanguagePicker from './LanguagePicker.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<nav
+  class="flex rounded-md bg-purple-100 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 border border-gray-100 relative z-20 p-4"
+>
+  <h1>{t('nav.home')}</h1>
+
+  <LanguagePicker />
+</nav>

@@ -1,6 +1,6 @@
 # <img src="https://media.tenor.com/images/0290b6387694a576c9b8858c900fe8c0/tenor.gif" width="30px"> Personal portfolio :
 
-<p align="justify">This repository houses the code for my personal portfolio, designed to function as my online resume and comprehensively reflect my web presence. Here you can explore my professional journey, including my academic background, work experience, technical skills, and notable projects. Each section is carefully crafted to provide a clear overview of my abilities as a developer. Additionally, you will find direct links to my <a href="https://fabergrajales.dev/" target="_blank" > 🔗 personal website</a>, where you can delve deeper into my achievements, personal initiatives, and approach to development.</p>
+<p align="justify">This repository houses the code for my personal portfolio, designed to function as my online resume and comprehensively reflect my web presence. Here you can explore my professional journey, including my academic background, work experience, technical skills, and notable projects. Each section is carefully crafted to provide a clear overview of my abilities as a developer. Additionally, you will find direct links to my 🌐 <a href="https://fabergrajales.dev/" target="_blank">personal website</a>, where you can delve deeper into my achievements, personal initiatives, and approach to development.</p>
 
 <!-- <img style="border-radius: 20px;" src="https://github.com/faber1999/portfolio/blob/main/public/screenshot.png?raw=true"> -->
 

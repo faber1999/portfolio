@@ -1,0 +1,29 @@
+<style>
+  @keyframes move-1 {
+    50% {
+      transform: translate(calc(-50vw), calc(-50vh)) scale(0.7);
+    }
+  }
+  @keyframes move-2 {
+    70% {
+      transform: translate(calc(50vw), calc(50vh)) scale(1.2);
+    }
+  }
+</style>
+
+<div class="absolute inset-0 z-10 main">
+  {
+    [...Array(30)].map((e, i) => {
+      return (
+        <div
+          class="bubble absolute rounded-full bg-white/40 w-[40px] h-[40px]"
+          style={{
+            left: `${Math.random() * 100}vw`,
+            top: `${Math.random() * 100}vh`,
+            animation: `move-${i % 2 === 0 ? 2 : 1} ${30 + (i % 2 === 0 ? 2 : 1) * 0.02}s infinite`
+          }}
+        />
+      )
+    })
+  }
+</div>

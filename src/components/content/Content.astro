@@ -1,0 +1,22 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+import Bubbles from '../bubbles/Bubbles.astro'
+import Navbar from '../navbar/Navbar.astro'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div class="flex w-full h-full justify-center">
+  <div
+    class="container p-8 overflow-hidden bg-gradient-to-r from-primary via-sub-primary to-post-primary relative"
+  >
+    <Bubbles />
+
+    <Navbar />
+
+    <div class="flex h-full justify-center items-center relative z-20">
+      <span class="text-6xl text-secondary font-bold">{t('copy.web-site-under-construction')}</span>
+    </div>
+  </div>
+</div>

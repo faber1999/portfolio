@@ -18,7 +18,7 @@ export const ui: UI = {
     'nav.home': 'Home',
     'nav.about': 'About',
 
-    'home.title': 'Welcome to the app'
+    'copy.web-site-under-construction': 'Web site under construction'
   },
   es: {
     'lang.en': 'Inglés',
@@ -29,7 +29,7 @@ export const ui: UI = {
     'nav.home': 'Inicio',
     'nav.about': 'Sobre',
 
-    'home.title': 'Bienvenido a la app'
+    'copy.web-site-under-construction': 'Sitio web en construcción'
   }
 } as const
 

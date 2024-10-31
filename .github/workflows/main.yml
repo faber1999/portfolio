@@ -20,8 +20,11 @@ jobs:
         with:
           node-version: '18' # Ajusta a la versión de Node que uses
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build project
         run: npm run build # Asegúrate de que este comando genere la carpeta dist
@@ -38,7 +41,11 @@ jobs:
           bye
           EOF
 
-      # 4. Subir nuevos archivos al servidor FTP
+      # 4. Verificar el contenido de la carpeta dist
+      - name: List dist directory
+        run: ls -la ./dist
+
+      # 5. Subir nuevos archivos al servidor FTP
       - name: Upload files to FTP
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:

@@ -1,14 +1,9 @@
-// @ts-check
+// astro.config.mjs
+import tailwind from '@astrojs/tailwind'
 import { defineConfig } from 'astro/config'
 
-import tailwind from '@astrojs/tailwind'
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()],
-  redirects: {
-    '/en': '/',
-    '/en/[...slug]': '/',
-    '/es/[...slug]': '/es'
-  }
+  site: 'https://fabergrajales.dev',
+  output: 'static', // o 'hybrid' para soporte mixto
+  integrations: [tailwind()]
 })

@@ -38,6 +38,7 @@ jobs:
           mdelete es/*
           mdelete *.svg
           delete index.html
+          delete .ftp-deploy-sync-state.json
           bye
           EOF
 

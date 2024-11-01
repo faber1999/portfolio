@@ -10,11 +10,11 @@ const translatePath = useTranslatedPath(currentLang)
   class="flex flex-col absolute right-4 gap-6 max-h-6 overflow-hidden transition-all duration-500
   hover:max-h-[8rem]"
 >
-  <img class="w-6" src="/translate.svg" alt="translate" />
+  <img width="24" height="24" src="/translate.svg" alt="translate" />
   {
     Object.entries(languages).map(([lang, label]) => (
       <a href={translatePath('/', lang)}>
-        <img class="w-6" src={`/${lang}.svg`} alt={label} />
+        <img width="24" height="24" src={`/${lang}.svg`} alt={label} />
       </a>
     ))
   }

@@ -5,12 +5,21 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
-      colors: {
-        primary: '#25b8c6',
-        'sub-primary': '#4ed1db',
-        'post-primary': '#13cfe1',
-        secondary: '#282828'
+      fontFamily: {
+        helvetica: ['Helvetica Neue', 'Arial', 'sans-serif']
       },
+      colors: {
+        primary: '#282828',
+        'sub-primary': '#282828',
+        'post-primary': '#282828',
+        secondary: '#25b8c6'
+      },
+      // colors: {
+      //   primary: '#25b8c6',
+      //   'sub-primary': '#25b8c6',
+      //   'post-primary': '#25b8c6',
+      //   secondary: '#282828'
+      // },
       boxShadow: {
         inner: 'inset 0 0px 4px 0 rgba(0, 0, 0, 0.6)',
         'inner-md': 'inset 0 0px 8px 0 rgba(0, 0, 0, 0.6)',

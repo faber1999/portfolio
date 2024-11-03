@@ -1,0 +1,20 @@
+---
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div class="flex min-h-40 h-full justify-center items-center relative z-20 bg-secondary">
+  <span
+    class="text-primary font-bold
+    text-[1.6rem]
+    sm:text-[2.2rem]
+    md:text-[2.8rem]
+    lg:text-[3.4rem]
+    xl:text-[4rem]
+    2xl:text-[4.6rem]"
+  >
+    {t('copy.web-site-under-construction')}
+  </span>
+</div>

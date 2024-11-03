@@ -6,7 +6,7 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<html lang={lang} class="w-full h-full m-0 p-0">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,7 +16,7 @@ const t = useTranslations(lang)
     <title>{t('page.title')}</title>
     <ViewTransitions />
   </head>
-  <body class="w-full h-full m-0 p-0 bg-secondary overflow-hidden">
+  <body class="w-full max-h-[100%] h-[100vh] m-0 p-0">
     <main class="w-full h-full">
       <slot />
     </main>

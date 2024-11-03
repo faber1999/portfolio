@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [tailwind()],
   experimental: {
     contentCollectionCache: true
+  },
+  devToolbar: {
+    enabled: false
   }
 })

@@ -16,8 +16,8 @@ const t = useTranslations(lang)
     <title>{t('page.title')}</title>
     <ViewTransitions />
   </head>
-  <body class="w-full max-h-[100%] h-[100vh] m-0 p-0">
-    <main class="w-full h-full">
+  <body class="flex w-full min-h-[100vh] m-0 p-0">
+    <main class="flex-1">
       <slot />
     </main>
   </body>
